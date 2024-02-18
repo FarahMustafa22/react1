@@ -7,9 +7,9 @@ class Car extends React.Component{
     }
     render()
     {
-      return (<div> <img src={this.props.image} />
+      return (<div style={{borderStyle: "solid" , borderColor: this.props.color , }} > 
+              <img src={this.props.image} />
               <h1> Brand Name: {this.props.brand} </h1>
-              <h2> Color is: {this.props.color} </h2>
               <h3> Car description : {this.props.desc}</h3>
                 </div>)
     }
